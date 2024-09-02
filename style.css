@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Inter:wght@400;700&family=Lato:wght@400;700&family=Mate+SC&family=Righteous&display=swap');
+
+/* font-family: 'Archivo', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Lato', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: 'Inter', sans-serif;
+  --font-family-2: 'Archivo', sans-serif;
+  --font-family-3: 'Lato', sans-serif;
+  --font-family-4: 'Mate SC', serif;
+}
+
+body {
+  background-color: #788C8D;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('images/img.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+
+  text-align: center;
+}
+
+.person-container {
+  color: #f9f9f9;
+
+}
+
+.profile {
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+  border: 8px solid #b6b1ac;
+  margin-bottom: 24px;
+
+  object-fit: cover;
+
+}
+
+.name {
+  font-family: var(--font-family-4);
+  font-size: 40px;
+  color: #b6b1ac;
+  margin-bottom: 10px;
+
+}
+
+.subtitle {
+  color: #b6b1ac;
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.info-container {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 40px;
+
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 300px;
+  height: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #465578;
+  padding: 24px;
+
+
+  border-radius: 32px;
+  border: 5px solid #9ba2a0;
+}
+
+.info-box-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: auto;
+  height: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #465578;
+  padding: 24px;
+
+
+  border-radius: 32px;
+  border: 5px solid #9ba2a0;
+}
+
+.info-box p a {
+  font-family: var(--font-family-3);
+  text-decoration: none;
+  color: #9ba2a0;
+}
+
+.info-box-second p a:hover {
+   color: #001f36;
+  text-decoration: underline;
+}
+
+.info-box-second .button_inicio {
+  font-family: var(--font-family-4);
+  font-size: 24px;
+  color: #9ba2a0;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+.info-box-second .button_inicio:hover {
+  color: #001f36;
+  text-decoration: underline;
+}
+
+.info-box__title a {
+  font-family: var(--font-family-4);
+  font-size: 24px;
+  color: #9ba2a0;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+.info-box__title a:hover {
+  background-color: #9ba2a0;
+  padding: 10px;
+  color: #001f36;
+  border: 3px solid #001f36;
+  border-radius: 20px;
+
+  transition: 0.4s all;
+}
+
+.contact-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+
+}
+
+.contact-container__link {
+  background-color: #9ba2a0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+
+  transition: all 0.4s;
+}
+
+.contact-container__link:hover {
+  background-color: #465578; 
+  
+}
+
+.contact-container__img {
+  width: 32px;
+
+}
+
+ form {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+label {
+  font-family: var(--font-family-4);
+  font-size: 14px;
+  font-weight: bold;
+  color: #9ba2a0;
+  margin-top: 10px;
+
+}
+
+input {
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #244C6F;
+  border-radius: 10px;
+
+}
+
+input[type="submit"] {
+  width: 100%;
+  font-weight: bold;
+  color: white;
+  background-color: #05468f;
+  padding: 1em 2em;
+  border: none;
+  border-radius: .6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+
+  transition: all 0.4s;
+
+}
+
+input[type="submit"]:hover {
+  background-color: #0964b2;
+
+}
+
+textarea {
+  box-sizing: border-box;
+  display: block;
+  padding: 15px;
+  border: 1px solid #244C6F;
+  border-radius: 10px;
+  margin: 10px 0px 20px;
+  resize: none
+}
